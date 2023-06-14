@@ -8,6 +8,6 @@ const foodSchema = new mongoose.Schema({
   table: { type: String, required: true },
 });
 
-const foods = mongoose.model("comidas", foodSchema);
+const Foods = mongoose.model("comidas", foodSchema);
 
-export default foods;
+export default Foods;

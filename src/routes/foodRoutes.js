@@ -1,16 +1,16 @@
 import express from "express";
-import foodController from "../controllers/foodController.js";
+import FoodController from "../controllers/foodController.js";
 
 const router = express.Router();
 
-router.get("/comidas", foodController.listFoods);
+router.get("/comidas", FoodController.listFoods);
 
-router.get("/comidas/:id", foodController.listIdFoods);
+router.get("/comidas/:id", FoodController.listIdFoods);
 
-router.post("/comidas", foodController.registerFood);
+router.post("/comidas", FoodController.registerFood);
 
-router.put("/comidas", foodController.updateFood);
+router.put("/comidas/:id", FoodController.updateFood);
 
-router.delete("/comidas", foodController.deleteFood);
+router.delete("/comidas", FoodController.deleteFood);
 
 export default router;

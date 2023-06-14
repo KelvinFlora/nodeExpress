@@ -1,6 +1,6 @@
 import Foods from "../models/Food.js";
 
-class foodController {
+class FoodController {
   static listFoods = async (request, response) => {
     const result = await Foods.find();
     response.status(200).json(result);
@@ -35,4 +35,4 @@ class foodController {
   };
 }
 
-export default foodController;
+export default FoodController;

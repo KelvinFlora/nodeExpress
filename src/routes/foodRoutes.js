@@ -11,6 +11,6 @@ router.post("/comidas", FoodController.registerFood);
 
 router.put("/comidas/:id", FoodController.updateFood);
 
-router.delete("/comidas", FoodController.deleteFood);
+router.delete("/comidas/:id", FoodController.deleteFood);
 
 export default router;

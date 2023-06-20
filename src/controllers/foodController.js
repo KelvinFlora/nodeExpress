@@ -2,7 +2,7 @@ import Foods from "../models/Food.js";
 
 class FoodController {
   static listFoods = async (request, response) => {
-    const result = await Foods.find();
+    const result = await Foods.find().populate("clientInfo").exec();
     response.status(200).json(result);
   };
 

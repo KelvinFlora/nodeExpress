@@ -7,6 +7,6 @@ const ClientParking = new mongoose.Schema({
   time: { type: String, required: true },
 });
 
-const Parking = mongoose.model("estacionamento", ClientParking);
+const Parking = mongoose.model("estacionamentos", ClientParking);
 
 export default Parking;
